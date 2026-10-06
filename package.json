@@ -1,0 +1,20 @@
+{
+  "name": "dsh-auto-start",
+  "version": "0.1.0",
+  "description": "Start DeepSeek Harness (dsh web) automatically at OS login on macOS, Linux, and Windows",
+  "type": "module",
+  "main": "index.js",
+  "files": ["index.js", "entry.js", "cordis.patch.yml"],
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/tonamson/dsh-auto-start.git" },
+  "scripts": {
+    "test": "node --test"
+  },
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
+  "peerDependencies": {
+    "@deepseek-ai/schemastery": "*"
+  },
+  "devDependencies": {
+    "@deepseek-ai/schemastery": "^3.18.4"
+  }
+}
